@@ -1,0 +1,23 @@
+import React from "react";
+
+import { {{sentenceCase name}}Props, {{sentenceCase name}}Theme } from "@noria/themes";
+import { usePress } from "react-aria";
+
+const {{sentenceCase name}} = React.forwardRef<HTML{{sentenceCase name}}Element, {{sentenceCase name}}Props>(
+    ({ ...props }, ref) => {
+    let { pressProps, isPressed } = usePress({});
+
+    return (
+      <{{sentenceCase name}}Theme 
+        {...pressProps} {...props} 
+        onClick={props.onClick} 
+        ref={ref} disabled={props.isDisabled}
+        isPressed={isPressed}
+      >
+       ///your code
+      </{{sentenceCase name}}Theme>
+    );
+
+    });
+
+    export default {{sentenceCase name}};

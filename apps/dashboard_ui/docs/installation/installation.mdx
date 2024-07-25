@@ -1,0 +1,40 @@
+---
+title: ""
+description: This is our first blog post. Really cool
+date: 2024-03-06
+tags: ["code", "blog"]
+published: true
+---
+
+* Step 1
+
+Install Noria with `pnpm install @noria/react`. Then create in your root application `noria.config.ts`
+
+* Step 2
+
+Now copy the `theme code` bellow and past at `noria.config.ts`
+
+* Step 3
+
+Now is time to import the  `NoriaProvider` or just copy the code bellow:
+
+```js  {4,5,14} showLineNumbers title="App.tsx"
+  "use client";
+
+import { NoriaProvider } from "@noria/config";
+import tokens from "./noria.config";
+ 
+export default function Provider({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+
+  return (
+      <NoriaProvider config={tokens}>
+       //Your App Here
+      </NoriaProvider>
+  );
+}
+ 
+```
