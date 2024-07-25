@@ -1,6 +1,12 @@
 
 
-# Turborepo install
+# Flash_UI_Design_System
+
+## Description:
+
+The Flash UI Design System is a robust and scalable design framework created to streamline the development process for web and mobile applications.
+It leverages modern technologies like ReactJS, TypeScript, and Styled Components to ensure a seamless and efficient development experience.
+The design system provides a cohesive set of components, styles, and guidelines that ensure consistency, maintainability, and a high level of user experience across all digital products.
 
 ## STEPS:
 
